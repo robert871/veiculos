@@ -1,0 +1,20 @@
+
+.cor1{
+    height: 90px;
+    width: 100px;
+    border: none;
+    background-color: aquamarine;
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color:blueviolet
+}
+input {
+    width: 180px;;
+}
+nav{
+    display: flex;
+    direction: row;
+}
