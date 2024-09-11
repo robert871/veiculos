@@ -77,5 +77,6 @@ function limpar(){
   window.document.getElementById('total').innerHTML = " "
   window.document.getElementById('valor').value = 0
   window.document.getElementById('final').innerText =  0
+  window.location.reload();
    // limpa o array atribuindo um valor de comprimento igual a zero
 }
