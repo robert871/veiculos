@@ -1,4 +1,8 @@
 
+
+
+
+
 let total1 = 0
 let tota2 = 0
 let tota3 = 0
@@ -14,9 +18,9 @@ function adicionar() {
   var valor = window.document.getElementById('valor').value // lê o valor de uma input
   valor2= parseFloat(valor)
   total = valor*(4/100)
-  window.document.getElementById('total').innerHTML += "carro de passeio <br>"
+  window.document.getElementById('total').innerHTML += `Carro de passeio: R$ ${total} de seguro <br>` 
   caixa.push(total) // faz o push do valor em um array 
-  somar()
+
 }
 
 function adicionar1() {
@@ -25,10 +29,10 @@ function adicionar1() {
   var valor2 = 0
   valor2= parseFloat(valor)
   total1 = valor2*(5/100)
-  window.document.getElementById('total').innerHTML += "ultilitario <br>"
+  window.document.getElementById('total').innerHTML += `Utilitário: R$ ${total1} de seguro <br>`  
 
   caixa.push(total1) // faz o push do valor em um array 
-  somar()
+
 
 
 }
@@ -38,10 +42,10 @@ function adicionar2() {
   var valor = window.document.getElementById('valor').value // lê o valor de uma input 
   valor2= parseFloat(valor)
   total2 += valor2*(3/100)
-  window.document.getElementById('total').innerHTML += "van ou onibus <br>"
+  window.document.getElementById('total').innerHTML += `Van ou ônibus: R$ ${total2} de seguro <br>`  
 
   caixa.push(total2) // faz o push do valor em um array 
-  somar()
+
 
   
 }function adicionar3() {
@@ -50,10 +54,10 @@ function adicionar2() {
   var valor = window.document.getElementById('valor').value // lê o valor de uma input 
   valor2= parseFloat(valor)
   total3 = valor*(2/100)
-  window.document.getElementById('total').innerHTML += "caminhão <br>"
+  window.document.getElementById('total').innerHTML += `Caminhão: R$ ${total3} de seguro <br>`  
    
   caixa.push(total3) // faz o push do valor em um array 
-  somar()
+
 
 }
 
@@ -68,7 +72,9 @@ soma_final += caixa[i]
   }
   
 window.document.getElementById('final').innerText = soma_final 
-
+window.document.getElementById('total').innerHTML = " "
+soma_final =0
+window.document.getElementById('valor').value=0
 
 
 
