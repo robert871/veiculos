@@ -66,7 +66,8 @@ function limpar(){
   window.document.getElementById('total').innerHTML = " "
   window.document.getElementById('valor').value = 0
   window.document.getElementById('final').innerText =  0
- soma_final=0
+  soma_final=0
+   caixa.length=0  
    // limpa o array atribuindo um valor de comprimento igual a zero
 }
 
